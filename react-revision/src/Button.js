@@ -26,9 +26,8 @@ export const Button = ({
     const checkButtonColor = STYLES.includes(buttonColor) ?
     buttonColor : null;
 
-    return (
-        <button className={`btn ${checkButtonStyle} ${checkButtonSize} 
-         ${checkButtonColor}`}onClick={onClick}type={type}>
+    return (<button className={`btn ${checkButtonStyle} ${checkButtonSize} 
+         ${checkButtonColor}`}onClick={onClick}type={(type)}>
             {children}
          </button>
     )
